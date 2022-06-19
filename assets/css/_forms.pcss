@@ -1,0 +1,18 @@
+@layer base {
+  input,
+  textarea {
+    color: var(--text-dark);
+    border: var(--border-color) 1px solid;
+    background-color: var(--bg-white);
+    @apply rounded;
+  }
+
+  input[type='submit'] {
+    @apply bg-gray p-3 cursor-pointer;
+    transition: 0.4s ease;
+  }
+
+  input[type='submit']:hover {
+    @apply bg-gray-600 border-gray;
+  }
+}

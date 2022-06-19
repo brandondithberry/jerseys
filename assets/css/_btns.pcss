@@ -1,0 +1,27 @@
+@layer components {
+  .btns {
+    @apply flex mt-4;
+  }
+  .btn {
+    @apply text-center font-semibold rounded py-2 px-4 md:py-4 md:px-5 text-white;
+    &:hover {
+      @apply border-gray-300  text-white;
+    }
+
+    &.btn--active {
+      @apply text-white bg-gray border-gray;
+      &:hover {
+        @apply bg-gray-600;
+      }
+    }
+    &.btn--disabled,
+    &[disabled='true'],
+    &:disabled {
+      @apply text-gray-400 cursor-not-allowed;
+    }
+  }
+
+  .btn:not(:last-child) {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,21 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  padding: env(safe-area-inset);
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--text);
+  @apply transition-colors duration-200 ease-in-out;
+}
+
+.container {
+  @apply flex place-content-center max-w-screen-lg;
+}
+
+.contain {
+  @apply grid place-content-center place-items-stretch m-auto max-w-screen-xl;
+}
