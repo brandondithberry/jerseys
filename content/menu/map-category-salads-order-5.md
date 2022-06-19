@@ -1,4 +1,4 @@
 ---
 category: Salads
-order: 5
+order: 8
 ---
