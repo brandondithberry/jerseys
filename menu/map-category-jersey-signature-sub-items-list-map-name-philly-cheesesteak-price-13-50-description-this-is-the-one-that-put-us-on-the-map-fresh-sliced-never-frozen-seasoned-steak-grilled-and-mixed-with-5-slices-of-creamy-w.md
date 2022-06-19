@@ -1,5 +1,5 @@
 ---
-category: Jersey Signature Sub
+category: Jersey Signature Subs
 items:
   - name: Philly Cheesesteak
     price: $13.50
