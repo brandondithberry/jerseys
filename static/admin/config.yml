@@ -39,7 +39,7 @@ collections:
           # - { label: Site Email, name: siteemail, widget: string, required: false }
   - label: 'Menu'
     name: 'menu'
-    folder: 'menu'
+    folder: 'content/menu'
     create: true
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
