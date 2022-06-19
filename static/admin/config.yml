@@ -46,7 +46,6 @@ collections:
     fields:
       - label: 'Category'
         name: 'category'
-        widget: 'object'
         summary: '{{fields.categoryname}}'
         fields:
           - { label: 'Category Name', name: 'categoryname', widget: 'string' }
