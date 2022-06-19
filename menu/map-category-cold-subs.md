@@ -47,5 +47,5 @@ items:
   - name: Jersey Shore
     description: Made In House - Cool Tuna mixed with crispy celery, carrots, onion
       & dressing
-    price: "0"
+    price: Varies
 ---
