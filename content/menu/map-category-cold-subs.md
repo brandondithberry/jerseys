@@ -48,5 +48,5 @@ items:
     description: Made In House - Cool Tuna mixed with crispy celery, carrots, onion
       & dressing
     price: Varies
-order: 4
+order: 3
 ---
