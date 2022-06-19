@@ -39,9 +39,9 @@ collections:
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
           # - { label: Site Email, name: siteemail, widget: string, required: false }
-  - label: "Menu"
-    name: "menu"
-    folder: "menu"
+  - label: 'Menu'
+    name: 'menu'
+    folder: 'menu'
     create: true
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
@@ -49,7 +49,7 @@ collections:
         name: 'items'
         widget: 'list'
         summary: '{{fields.name}} - {{fields.price}}'
-          - { label: 'Name', name: 'name', widget: 'string' }
-          - { label: 'Price', name: 'price', widget: 'string' }
-          - { label: 'Description', name: 'description', widget: 'text' }
-          - { label: 'Photo', name: 'photo', widget: 'image' }
+        fields:
+          - { label: Name, name: name, widget: string }
+          - { label: Price, name: price, widget: string }
+          - { label: Description, name: description, widget: text }
