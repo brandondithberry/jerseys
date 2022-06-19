@@ -39,44 +39,33 @@ collections:
               pattern: ['^[a-z]{2}([-])?([A-Za-z]{2})?$', 'Must match "xx" or "xx-XX" syntax (ex. "en" or "sv-SE")'],
             }
           # - { label: Site Email, name: siteemail, widget: string, required: false }
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - label: 'Menu'
+    name: 'menu'
+    folder: 'content/menu'
     create: true
-    format: 'frontmatter'
-    slug: '{{fields.createdAt}}-{{slug}}'
-    # editor:
-    #   preview: true
     fields:
-      - { label: 'Created Date', name: 'createdAt', widget: 'datetime', date_format: "YYYY-MM-DD", time_format: false }
-      - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'Body', name: 'body', widget: 'markdown', required: false }
-  - name: 'projects'
-    label: 'Projects'
-    label_singular: 'Project'
-    folder: 'content/projects'
-    create: true
-    format: 'frontmatter'
-    slug: '{{slug}}'
-    preview_path: 'projects/{{slug}}'
-    fields:
-      - {
-          label: 'Project Category',
-          name: 'category',
-          widget: 'select',
-          default: 'animals',
-          options: [{ label: 'Animals', value: 'animals' }, { label: 'Food', value: 'food' }],
-        }
-      - { label: 'Title', name: 'title', widget: 'string', required: true }
-      - { label: 'Description', name: 'description', widget: 'string', required: false }
-      - { label: 'Cover Image', name: 'cover', widget: 'image', required: false, allow_multiple: false }
-      - { label: 'Content', name: 'body', widget: 'markdown', required: false }
-      - {
-          label: 'Gallery',
-          name: 'gallery',
-          widget: 'list',
-          required: false,
-          summary: '{{fields.image}}',
-          field: { label: 'Image', name: 'image', widget: 'image' },
-        }
+      - label: 'Item'
+        name: 'item'
+        widget: 'object'
+        summary: '{{fields.name}}'
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Price', name: 'price', widget: 'string' }
+          - label: 'Category'
+            name: 'category'
+            widget: 'select'
+            options:
+              [
+                'Deli Meat & Cheese',
+                'Pizza',
+                'Jersey Signature Sub',
+                'Cold Sub',
+                'Hot Sub',
+                'Party Sub',
+                'Salad',
+                'Side',
+                'Dessert',
+                'Other',
+              ]
+          - { label: 'Description', name: 'description', widget: 'text' }
+          - { label: 'Photo', name: 'photo', widget: 'image' }
