@@ -41,33 +41,20 @@ collections:
           # - { label: Site Email, name: siteemail, widget: string, required: false }
   - label: 'Menu'
     name: 'menu'
-    files:
-      - label: 'Items'
-        name: 'items'
-        file: 'site/content/items.yml'
+    folder: "_menu/category"
+    create: true
+    fields:
+      - label: 'Category'
+        name: 'category'
+        widget: 'object'
+        summary: '{{fields.categoryname}}'
         fields:
-          - label: 'Item'
-            name: 'item'
+          - { label: 'Category Name', name: 'categoryname', widget: 'string' }
+          - label: 'Items'
+            name: 'items'
             widget: 'list'
             summary: '{{fields.name}} - {{fields.price}}'
-            fields:
               - { label: 'Name', name: 'name', widget: 'string' }
               - { label: 'Price', name: 'price', widget: 'string' }
-              - label: 'Category'
-                name: 'category'
-                widget: 'select'
-                options:
-                  [
-                    'Deli Meat & Cheese',
-                    'Pizza',
-                    'Jersey Signature Sub',
-                    'Cold Sub',
-                    'Hot Sub',
-                    'Party Sub',
-                    'Salad',
-                    'Side',
-                    'Dessert',
-                    'Other',
-                  ]
               - { label: 'Description', name: 'description', widget: 'text' }
               - { label: 'Photo', name: 'photo', widget: 'image' }
