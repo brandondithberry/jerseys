@@ -1,7 +1,5 @@
-site_url: https://ntn-boilerplate.netlify.app/
-logo_url: https://ntn-boilerplate.netlify.app/icon.png
-
-publish_mode: editorial_workflow
+site_url: https://jerseys.netlify.app/
+logo_url: https://jerseys.netlify.app/icon.png
 backend:
   name: git-gateway
   branch: master
