@@ -43,8 +43,8 @@ collections:
     create: true
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
-      - label: 'Items'
-        name: 'items'
+      - label: 'posts'
+        name: 'posts'
         widget: 'list'
         summary: '{{fields.name}} - {{fields.price}}'
         fields:
