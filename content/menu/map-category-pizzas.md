@@ -19,28 +19,22 @@ details: >-
   ### **Specialty Pies (18")**
 
 
-  **White Pie**\
+  #### White Pie
 
   Oil and butter garlic sauce topped with ricotta and mozzarella
 
 
-  \
-
-  **Boars Head Pie – Meat Pizza**\
+  #### Boars Head Pie – Meat Pizza
 
   Smoked pepperoni, Italian sausage, capicola, bacon and meatballs
 
 
-  \
-
-  **Deluxe Pie**\
+  #### Deluxe Pie
 
   Smoked pepperoni, fresh Italian sausage, green pepper, onions & mushrooms
 
 
-  \
-
-  **Garden State Pie Veggie Pizza**\
+  #### Garden State Pie Veggie Pizza
 
   mushrooms, green peppers, tomatoes, banana peppers & onions
 order: 6
