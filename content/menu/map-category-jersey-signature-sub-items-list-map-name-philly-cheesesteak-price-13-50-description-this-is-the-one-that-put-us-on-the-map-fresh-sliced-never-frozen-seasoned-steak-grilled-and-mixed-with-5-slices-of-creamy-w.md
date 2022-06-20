@@ -10,4 +10,5 @@ items:
 
 
       Also available in Chicken Cheese Steak
+order: 2
 ---
