@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter'],
+        title: ['Roboto Condensed'],
+        normal: ['Roboto'],
       },
       colors: {
         gray: {

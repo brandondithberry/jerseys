@@ -16,7 +16,7 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const posts = await $content('menu').fetch()
+    const posts = await $content('menu').sortBy('order').fetch()
 
     return {
       posts,
