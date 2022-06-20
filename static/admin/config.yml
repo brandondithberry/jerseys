@@ -43,6 +43,7 @@ collections:
     create: true
     fields:
       - { label: 'Category', name: 'category', widget: 'string' }
+      - { label: 'Details', name: 'details', widget: 'markdown' }
       - { label: Order, name: 'order', widget: 'number' }
       - label: 'posts'
         name: 'posts'

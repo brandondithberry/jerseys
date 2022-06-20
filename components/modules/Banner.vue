@@ -30,7 +30,7 @@ export default {
 }
 .overlay {
   @apply flex w-full h-full place-content-center items-center justify-start px-6 py-14 lg:p-20 lg:py-48;
-  background: #00000033;
+  background: #00000044;
 }
 .inner {
   @apply text-center text-white max-w-2xl m-auto;
